@@ -35,8 +35,11 @@ pipeline {
 
         stage('Deploy to Kubernetes') {
             steps {
-                bat 'kubectl apply -f k8s\\deployment.yaml'
-                bat 'kubectl apply -f k8s\\service.yaml'
+        bat '''
+        set KUBECONFIG=C:\Users\sairu\.kube\config
+        kubectl apply -f k8s\\deployment.yaml
+        kubectl apply -f k8s\\service.yaml
+        '''
             }
         }
     }
