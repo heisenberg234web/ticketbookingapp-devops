@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticketbookingapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ticketbookingapp
+  template:
+    metadata:
+      labels:
+        app: ticketbookingapp
+    spec:
+      containers:
+        - name: ticketbookingapp
+          image: heisenberg123/ticketbookingapp:1.0   # use your real image name
+          ports:
+            - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 15
+            periodSeconds: 10
