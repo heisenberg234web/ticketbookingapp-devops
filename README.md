@@ -110,26 +110,33 @@ ticketbookingapp-devops/
 ```
 ...
 
-## 📁 Screenshots
-```
-├── 1. Jenkins Pipeline Configuration  
-│   └── Jenkins job configuration showing Git repository integration and build triggers  
-│
-├── 2. Docker Hub Repository  
-│   └── Docker Hub repository showing the successfully pushed container image  
-│
-├── 3. GitHub Repository Structure  
-│   └── Source code structure on GitHub showing the Flask application and configuration files  
-│
-├── 4. Kubernetes Deployment  
-│   └── Kubernetes service deployment using Minikube with accessible service URL  
-│
-├── 5. Jenkins Pipeline Execution  
-│   └── Successful Jenkins pipeline execution with all stages completed  
-│
-└── 6. Application Website  
-    └── CineBook application homepage showing available movies and booking options
-```
+## 📸 Screenshots
+
+
+1. **Jenkins Pipeline Configuration**  
+   Jenkins job configuration showing Git repository integration and build triggers  
+   ![Jenkins Pipeline](screenshots/jenkins-pipeline.png)
+
+2. **Docker Hub Repository**  
+   Docker Hub repository showing the successfully pushed container image  
+   ![Docker Hub](screenshots/docker-hub.png)
+
+3. **GitHub Repository Structure**  
+   Source code structure on GitHub showing the Flask application and configuration files  
+   ![GitHub Repo](screenshots/github-repo.png)
+
+4. **Kubernetes Deployment**  
+   Kubernetes service deployment using Minikube with accessible service URL  
+   ![Kubernetes Deployment](screenshots/k8s-deployment.png)
+
+5. **Jenkins Pipeline Execution**  
+   Successful Jenkins pipeline execution with all stages completed  
+   ![Pipeline Execution](screenshots/pipeline-execution.png)
+
+6. **Application Website**  
+   CineBook application homepage showing available movies and booking options  
+   ![Application Homepage](screenshots/homepage.png)
+
 
 
 
