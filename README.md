@@ -87,7 +87,7 @@ This shows how code flows: from GitHub → CI/CD → image registry → Kubernet
 
 Make sure the following are installed before running locally:
 
-- [**Python 3.10+**](https://www.python.org/downloads/) – Required to run the Flask application
+- **[Python 3.10+](https://www.python.org/downloads/)** – Required to run the Flask application
 - [**Docker**](https://docs.docker.com/get-docker/) – For containerizing the app
 - [**Kubernetes CLI (`kubectl`)**](https://kubernetes.io/docs/tasks/tools/) – To manage Kubernetes clusters
 - [**Minikube (optional)**](https://minikube.sigs.k8s.io/docs/start/) – For running a local Kubernetes cluster
