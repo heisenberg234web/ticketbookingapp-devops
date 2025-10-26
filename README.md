@@ -119,7 +119,7 @@ ticketbookingapp-devops/
 
 2. **Docker Hub Repository**  
    Docker Hub repository showing the successfully pushed container image  
-   ![Docker Hub](screenshots/docker-hub.png)
+   ![Docker Hub](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/dockerhub.png))
 
 3. **GitHub Repository Structure**  
    Source code structure on GitHub showing the Flask application and configuration files  
@@ -127,15 +127,15 @@ ticketbookingapp-devops/
 
 4. **Kubernetes Deployment**  
    Kubernetes service deployment using Minikube with accessible service URL  
-   ![Kubernetes Deployment](screenshots/k8s-deployment.png)
+   ![Kubernetes Deployment](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/kubernetes.png))
 
 5. **Jenkins Pipeline Execution**  
    Successful Jenkins pipeline execution with all stages completed  
-   ![Pipeline Execution](screenshots/pipeline-execution.png)
+   ![Pipeline Execution](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/jenkinspipeline.png))
 
 6. **Application Website**  
    CineBook application homepage showing available movies and booking options  
-   ![Application Homepage](screenshots/homepage.png)
+   ![Application Homepage](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/application.png))
 
 
 
