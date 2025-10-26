@@ -134,7 +134,7 @@ ticketbookingapp-devops/
    ![Pipeline Execution](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/jenkinspipeline.png))
 
 6. **Application Website**  
-   CineBook application homepage showing available movies and booking options  
+    Application  booking options  
    ![Application Homepage](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/application.png))
 
 
