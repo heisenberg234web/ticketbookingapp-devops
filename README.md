@@ -222,6 +222,7 @@ ticketbookingapp-devops/
     └── Monitor stages and logs for build, test, push, deployment
 ```
 👤 Author & Contributions
+```
 ├── Author: Maheshwaram Sai Ruthwik
 ├── GitHub: https://github.com/heisenberg234web
 ├── Docker Hub: https://hub.docker.com/u/heisenberg123
@@ -233,6 +234,7 @@ ticketbookingapp-devops/
 │   ├── Wrote Kubernetes manifests for deployment and service
 │   ├── Added documentation and screenshots for README
 │   └── Ensured end-to-end DevOps workflow from code to deployment
+```
 
 
 
