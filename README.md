@@ -115,7 +115,7 @@ ticketbookingapp-devops/
 
 1. **Jenkins Pipeline Configuration**  
    Jenkins job configuration showing Git repository integration and build triggers  
-   ![Jenkins Pipeline](screenshots/jenkins-pipeline.png)
+   ![Jenkins Pipeline](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/jenkinscicd.png))
 
 2. **Docker Hub Repository**  
    Docker Hub repository showing the successfully pushed container image  
