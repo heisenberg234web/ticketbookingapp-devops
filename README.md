@@ -7,7 +7,7 @@
 ![Kubernetes](https://img.shields.io/badge/kubernetes-latest-lightblue)  
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-pipeline-red)
 
-A production-ready Flask web application for movie ticket booking, with a complete DevOps workflow including Docker, Jenkins, and Kubernetes deployment.
+A production-ready Flask web application for  ticket booking, with a complete DevOps workflow including Docker, Jenkins, and Kubernetes deployment.
 
 ---
 
@@ -22,18 +22,7 @@ This project demonstrates a full DevOps workflow for a Flask web application, in
 
 ---
 
-## About the Web Application
 
-The Movie Ticket Booking Platform allows users to:
-
-- Browse currently playing movies  
-- Check showtimes and seat availability  
-- Select preferred seats  
-- Complete bookings with secure payment options (or simulated payment flow)  
-
-It offers a responsive UI with real-time seat selection, intuitive navigation, and a seamless booking experience.
-
----
 
 ## ✨ Features
 
