@@ -123,7 +123,7 @@ ticketbookingapp-devops/
 
 3. **GitHub Repository Structure**  
    Source code structure on GitHub showing the Flask application and configuration files  
-   ![GitHub Repo](screenshots/github-repo.png)
+   ![GitHub Repo](https://github.com/heisenberg234web/ticketbookingapp-devops/blob/main/Screenshot%202025-10-26%20131847.png))
 
 4. **Kubernetes Deployment**  
    Kubernetes service deployment using Minikube with accessible service URL  
