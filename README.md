@@ -1,4 +1,4 @@
-# DevOps Assignment 2 – Movie Ticket Booking Platform with CI/CD Pipeline
+# DevOps Assignment 2 – Ticket Booking Platform with CI/CD Pipeline
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue)  
 ![Flask](https://img.shields.io/badge/flask-2.x-green)  
@@ -48,4 +48,181 @@ It offers a responsive UI with real-time seat selection, intuitive navigation, a
 ---
 
 ## Architecture
+          ┌──────────────────────────┐
+          │     GitHub Repo          │
+          │ heisenberg234web/ticketbookingapp-devops │
+          └───────────┬──────────────┘
+                      │
+                      ▼
+          ┌──────────────────────────┐
+          │        Jenkins           │
+          │   CI/CD Pipeline         │
+          └───────────┬──────────────┘
+                      │
+                      ▼
+          ┌──────────────────────────┐
+          │       Docker Hub         │
+          │  (TicketBookingApp Image)│
+          └───────────┬──────────────┘
+                      │
+                      ▼
+          ┌──────────────────────────┐
+          │   Kubernetes Cluster     │
+          │ (App Pods, Service, Ingress) │
+          └───────────┬──────────────┘
+                      │
+                      ▼
+          ┌──────────────────────────┐
+          │     End Users / Clients  │
+          │ (Access via LoadBalancer │
+          │     or NodePort URL)     │
+          └──────────────────────────┘
+
+This shows how code flows: from GitHub → CI/CD → image registry → Kubernetes → end-users.
+
+---
+
+## Prerequisites
+
+Make sure the following are installed before running locally:
+
+- Python 3.10+  
+- Docker  
+- Kubernetes CLI (`kubectl`) and optionally Minikube for local testing  
+- Jenkins (for CI/CD)  
+- Git  
+
+---
+
+## 📁 Project Structure
+```
+ticketbookingapp-devops/
+│
+├── app/ # Flask web application code
+│ ├── static/ # CSS / JS / images
+│ ├── templates/ # HTML templates
+│ ├── app.py # Main Flask entry point
+│ └── requirements.txt # Python dependencies
+│
+├── Dockerfile # Docker build instructions
+├── Jenkinsfile # CI/CD pipeline definition
+├── .gitignore # Files to ignore
+│
+├── k8s/ # Kubernetes deployment files
+│ ├── deployment.yaml
+│ └── service.yaml
+│
+├── screenshots/ # Screenshots for documentation
+└── README.md # This documentation file
+```
+...
+
+## 📁 Screenshots
+```
+├── 1. Jenkins Pipeline Configuration  
+│   └── Jenkins job configuration showing Git repository integration and build triggers  
+│
+├── 2. Docker Hub Repository  
+│   └── Docker Hub repository showing the successfully pushed container image  
+│
+├── 3. GitHub Repository Structure  
+│   └── Source code structure on GitHub showing the Flask application and configuration files  
+│
+├── 4. Kubernetes Deployment  
+│   └── Kubernetes service deployment using Minikube with accessible service URL  
+│
+├── 5. Jenkins Pipeline Execution  
+│   └── Successful Jenkins pipeline execution with all stages completed  
+│
+└── 6. Application Website  
+    └── CineBook application homepage showing available movies and booking options
+```
+
+
+
+## 📁 Docker Deployment
+```
+
+├── 🧱 Build the Docker Image  
+│   └── `docker build -t heisenberg234web/ticketbookingapp-devops:latest .`  
+│
+└── 🚀 Run the Container Locally  
+    └── `docker run -d -p 5000:5000 heisenberg234web/ticketbookingapp-devops:latest`
+```
+
+
+
+## 📁 Push to Docker Hub
+```
+
+├── 🏷️ Tag Docker Image  
+│   └── `docker tag heisenberg234web/ticketbookingapp-devops:latest <your-dockerhub-username>/ticketbookingapp-devops:latest`  
+│
+├── 🔑 Login to Docker Hub  
+│   └── `docker login`  
+│
+└── 📤 Push Docker Image  
+    └── `docker push <your-dockerhub-username>/ticketbookingapp-devops:latest`
+```
+
+
+## 📁 Kubernetes Deployment
+```
+
+├── 🟢 Start Minikube (local testing)  
+│   └── `minikube start`  
+│
+├── 📄 Apply Kubernetes Manifests  
+│   └── `kubectl apply -f k8s/`  
+│
+├── 🔍 Check Deployment Status  
+│   ├── `kubectl get pods`  
+│   └── `kubectl get services`  
+│
+├── 📈 Scale Deployment (optional)  
+│   └── `kubectl scale deployment ticket-booking-app --replicas=3`  
+│
+└── 🗑️ Clean Up  
+    └── `kubectl delete -f k8s/`
+```
+
+## 📁 CI/CD Pipeline
+```
+
+├── 1️⃣ Checkout Code  
+│   └── Clone the latest code from GitHub repository  
+│
+├── 2️⃣ Build Docker Image  
+│   └── Build using Dockerfile  
+│
+├── 3️⃣ Run Tests  
+│   └── Run automated tests or health-check scripts  
+│
+├── 4️⃣ Push to Docker Registry  
+│   └── Push built image to Docker Hub  
+│
+└── 5️⃣ Deploy to Kubernetes  
+    └── Apply manifests to update application deployment
+```
+
+## 📁 Jenkins Setup
+```
+
+├── ⚙️ Install Jenkins and Required Plugins  
+│   └── Docker Pipeline, Kubernetes CLI, Git  
+│
+├── 🔑 Configure Credentials  
+│   ├── Docker registry credentials  
+│   └── Kubernetes config (if required)  
+│
+├── 🏗️ Create Pipeline Job  
+│   └── Point to GitHub repository + Jenkinsfile  
+│
+└── ▶️ Run Pipeline  
+    └── Monitor stages and logs for build, test, push, deployment
+```
+
+
+
+
 
